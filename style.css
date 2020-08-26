@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("background1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+h1.title {
+    font-family: "Source Sans Pro";
+    font-weight: bolder;
+    font-size: 80px;
+    border: solid 2px whitesmoke;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    /* -webkit-text-stroke: 2px black; */
+}
+
+h2.title {
+    font-family: "Source Sans Pro";
+    font-weight: bolder;
+    font-size: 60px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h3,
+h4,
+h5.subtitle {
+    font-family: "Source Sans Pro";
+    font-weight: bolder;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Source Sans Pro";
+}
+
+.grid {
+    justify-self: center;
+    display: grid;
+    grid-template:
+        "bannercustom" 92vh
+        "menucustom" auto
+        "contentcustom" 88vh
+        "footercustom" 4vh
+        / 100%
+}
+
+.grid-item {
+    margin: 0px;
+}
+
+.custom-banner {
+    grid-area: bannercustom;
+    justify-self: center;
+    align-self: center;
+}
+
+.custom-menu {
+    grid-area: menucustom;
+    margin: 0%;
+    background-color: darkslategray;
+}
+
+.custom-content {
+    grid-area: contentcustom;
+    overflow-y: scroll;
+}
+
+.custom-footer {
+    grid-area: footercustom;
+}
+
+.round-layout {
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 0px;
+}
+
+.scroll-bar{
+}
+
+.scroll-bar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    display: none;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+    background: slategray;
+    border-radius: px;
+}
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+    background: white;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.scroll-bar::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+.scroll-bar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+    display: none;
+}
+.scroll-bar::-webkit-scrollbar-track:hover,
+.scroll-bar::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.separate {
+    padding-bottom: 30px;
+    border-bottom: solid black 1px;
+}
+
+.progress {
+    background-color: lightgray;
+    border: solid 1px gray;
+    height: 20px;
+}
+
+.center-content {
+    justify-content: center;
+}
+
+.icons {
+    color: white;
+}
+
+.icons-big {
+    height: 40px;
+    width: 40px;
+    color: white;
+    margin-right: 6px;
+    padding: 0px;
+}
