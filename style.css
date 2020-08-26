@@ -157,10 +157,10 @@ img {
     padding: 0px;
 }
 
-@media only screen and (max-width: 1242px) {
+@media only screen and (max-width: 828px) {
     body {
       /* The file size of this background image is 93% smaller
          to improve page load speed on mobile internet connections */
-      background-image: url("background2.jpg");
+      background-image: url("background3.jpg");
     }
   }
